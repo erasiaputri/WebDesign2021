@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome to Putri's Page</title>
+</head>
+<body>
+    <form>
+      <h1>Erasia Putri Kloah - Web Design Exercise 6</h1>
+      <br>
+      <br>
+      <fieldset>
+        <legend><b>Formulir Calon Pegawai</b></legend>
+        <section class="isiData">
+        <label for="name" >Nama: </label>
+        <input type="text" name="name" required minlength="4" maxlength="15"/><br><br>
+        <label for="address">Alamat: </label>
+        <input type="text" name="address" required /><br><br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" required minlength="8" maxlength="16" required pattern="[a-zA-Z0-9]+"/><br><br>  
+
+        <span>Jenis Kelamin</span>
+        <input type="radio" name="gender" id="boy" value="boy">
+        <label for="boy">Laki-Laki</label>
+        <input type="radio" name="gender" id="girl" value="girl">
+        <label for="girl">Perempuan</label>
+      
+
+        <br>
+        <br><span>Bahasa Pemrograman yang dikuasai:</span>
+        <input type="checkbox" name="proglang" id="web" value="web">
+        <label for="web">Web</label>
+        <input type="checkbox" name="proglang" id="mobile" value="mobile">
+        <label for="mobile">MOBILE</label>
+        <input type="checkbox" name="proglang" id="desk" value="desk">
+        <label for="desk">DESKTOP</label>
+
+        <br>
+        <br>
+        <label for="kota">Kota Asal:</label>
+          <select>
+            <option value="manado">Manado</option>
+            <option value="jakarta">Jakarta</option>
+            <option value="semarang">Semarang</option>
+          </select>
+
+        <br>
+        <br>
+
+          <label for="reason">Apa yang membuat kami harus memilih Anda?:</label>
+          <br>
+          <textarea id="reason" name="reason" rows="6" cols="50">Tulis jawaban anda disini</textarea>
+
+
+          <section class="submission"></section>
+            <input type="submit" value="Proses">
+          </section>
+      </section>
+    </fieldset>
+    
+    </form>
+  </body>
+</html>
